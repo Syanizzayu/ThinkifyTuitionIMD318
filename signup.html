@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signup Page</title>
+    </head>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: Arial, sans-serif;
+   background-image: url(register.jpg);
+   background-size: cover;
+}
+
+.wrapper {
+    text-align: center;
+    width: 300px;
+    background-color: rgb(10, 156, 205);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.wrapper h2{
+font-size: 50px;
+
+}
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-btn:hover {
+    background-color: #218838;
+}
+
+.register-link {
+    margin-top: 10px;
+}
+
+.register-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+</style>  
+            <div class="wrapper">
+                <h2>Sign Up</h2>
+            <form action="signup.php" method="post">
+                <div class="input-box">
+                <label for="Email">Email</label><br>
+                <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                <label for="username">Username</label><br>
+                <div class="input-box">
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+                <label for="phonenumber">Phone Number</label><br>
+               
+                <input type="text" name="phonenumber" placeholder="Phone Number" required>
+            </div>
+            <div class="input-box">
+                <label for="password">Password</label><br>
+             
+                <input type="password" name="password" placeholder="password" required>
+            </div>
+
+                <button type="submit" class="login-btn" >Sign up</button>
+                <div class="register-link">
+                    <p>Already have account?<a href="login.html"> Log In Here</a></p>
+                </div>
+                        </div>
+            </form>
+        
+    </body>
+</html>
